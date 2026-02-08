@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scalable Localization Architecture</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <div class="max-w-6xl mx-auto px-6 py-12">
+    <!-- Header -->
+    <header class="mb-12">
+      <h1 class="text-4xl font-bold tracking-tight">Scalable Localization Architecture</h1>
+      <p class="mt-4 text-slate-600 max-w-3xl">
+        This page presents the evolution of a localization system — from a simple MVP implementation
+        to a fully scalable, product-owned localization management platform.
+      </p>
+
+      <div class="mt-6 flex flex-wrap items-center gap-3">
+        <a
+          href="https://github.com/shahnawaz/localization-architecture"
+          target="_blank"
+          class="inline-flex items-center gap-2 rounded-lg bg-slate-900 text-white px-4 py-2 text-sm font-semibold hover:bg-slate-800"
+        >
+          View GitHub Repository
+        </a>
+      </div>
+    </header>
+
+    <!-- Stages -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Stage 1 -->
+      <a
+        href="./stage-1-mvp-localization.html"
+        class="group rounded-2xl bg-white border border-slate-200 p-6 hover:shadow-md transition"
+      >
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-semibold text-emerald-600">Stage 1</span>
+          <span class="text-xs bg-emerald-50 text-emerald-700 px-2 py-1 rounded-full">MVP</span>
+        </div>
+        <h2 class="mt-3 text-xl font-semibold">Bundled Localization</h2>
+        <p class="mt-2 text-sm text-slate-600">
+          Translation files are part of the app build. Developers update locale JSON files and ship
+          a new release for every copy change.
+        </p>
+        <div class="mt-4 text-sm font-semibold text-emerald-600 group-hover:underline">
+          View stage →
+        </div>
+      </a>
+
+      <!-- Stage 2 -->
+      <a
+        href="./stage-2-cloud-hosted-localization.html"
+        class="group rounded-2xl bg-white border border-slate-200 p-6 hover:shadow-md transition"
+      >
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-semibold text-sky-600">Stage 2</span>
+          <span class="text-xs bg-sky-50 text-sky-700 px-2 py-1 rounded-full">Scalable</span>
+        </div>
+        <h2 class="mt-3 text-xl font-semibold">Cloud Hosted Localization</h2>
+        <p class="mt-2 text-sm text-slate-600">
+          Base language ships with the app, while other locales are fetched from the cloud via CDN.
+          Copy updates no longer require rebuilding the app.
+        </p>
+        <div class="mt-4 text-sm font-semibold text-sky-600 group-hover:underline">
+          View stage →
+        </div>
+      </a>
+
+      <!-- Stage 3 -->
+      <a
+        href="./stage-3-localization-management-system.html"
+        class="group rounded-2xl bg-white border border-slate-200 p-6 hover:shadow-md transition"
+      >
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-semibold text-violet-600">Stage 3</span>
+          <span class="text-xs bg-violet-50 text-violet-700 px-2 py-1 rounded-full">Product-owned</span>
+        </div>
+        <h2 class="mt-3 text-xl font-semibold">Localization Management System</h2>
+        <p class="mt-2 text-sm text-slate-600">
+          Product teams manage translations in real time via a portal, with validation,
+          versioning, and safe CDN-based delivery to all clients.
+        </p>
+        <div class="mt-4 text-sm font-semibold text-violet-600 group-hover:underline">
+          View stage →
+        </div>
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-16 text-sm text-slate-500">
+      Built as a reference architecture for product, design, and engineering discussions.
+    </footer>
+  </div>
+</body>
+</html>
